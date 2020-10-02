@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trees.vue renders correctly 1`] = `
+<div
+  justify="center"
+  type="flex"
+>
+  <h1>
+    Trees
+  </h1>
+   
+  <div
+    style="display: flex; justify-content: center;"
+  >
+    <div
+      style="width: 50%; display: flex; justify-content: space-around; flex-wrap: wrap;"
+    >
+      <tree-card-stub
+        tree="[object Object]"
+      />
+    </div>
+  </div>
+</div>
+`;

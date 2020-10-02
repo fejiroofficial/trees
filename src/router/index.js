@@ -4,11 +4,9 @@ import Trees from "@/pages/Trees";
 
 Vue.use(Router);
 
-const routes = [
-    { path: '/', component: Trees },
-  ]
+const routes = [{ path: "/", component: Trees }];
 
 export default new Router({
-  mode: 'history',
+  mode: "history",
   routes,
 });

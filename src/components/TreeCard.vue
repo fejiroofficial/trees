@@ -1,5 +1,5 @@
 <template>
-  <a-card class="tree-card">
+  <div class="tree-card ant-card ant-card-bordered">
     <div class="tree-card__name">{{ tree.name }}</div>
     <p>{{ tree.species_name }}</p>
     <img
@@ -8,10 +8,10 @@
       :src="tree.image"
       style="width: 200px; height: 200px"
     />
-    <a-button @click="showImage = !showImage" style="margin-top: 10px;">{{
+    <button class="ant-btn" @click="showImage = !showImage" style="margin-top: 10px;">{{
       showImage ? "Hide Image" : "Show Image"
-    }}</a-button>
-  </a-card>
+    }}</button>
+  </div>
 </template>
 
 <script>
@@ -31,6 +31,7 @@ export default {
 .tree-card {
   width: 300px;
   margin-bottom: 50px;
+  padding: 20px;
 
   &__name {
     font-weight: bold;
