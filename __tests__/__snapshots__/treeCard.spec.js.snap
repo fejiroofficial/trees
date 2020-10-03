@@ -2,7 +2,7 @@
 
 exports[`TreeCard.vue renders correctly 1`] = `
 <div
-  class="tree-card ant-card ant-card-bordered"
+  class="tree-card ant-card ant-card-bordered tree-card__short"
 >
   <div
     class="tree-card__name"
@@ -14,13 +14,27 @@ exports[`TreeCard.vue renders correctly 1`] = `
     sample species
   </p>
    
-  <!---->
-   
-  <button
-    class="ant-btn"
-    style="margin-top: 10px;"
+  <div
+    class="tree-card__flex-box"
   >
-    Show Image
-  </button>
+    <img
+      alt="sample tree"
+      class="tree-card__img"
+      src="www.image.com"
+      style="display: none;"
+    />
+  </div>
+   
+  <div
+    class="tree-card__flex-box"
+  >
+    <button
+      class="ant-btn tree-card__button"
+    >
+      
+      Show Image
+    
+    </button>
+  </div>
 </div>
 `;

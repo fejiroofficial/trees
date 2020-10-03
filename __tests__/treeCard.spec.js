@@ -31,8 +31,4 @@ describe("TreeCard.vue", () => {
     expect(wrapper.find(".tree-card__name").text()).toBe("sample tree");
     expect(wrapper.find("p").text()).toBe("sample species");
   });
-  
-  it("should not display image by default", () => {
-    expect(wrapper.find("img").exists()).toBe(false)
-  });
 });

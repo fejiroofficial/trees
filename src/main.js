@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import Axios from './plugins/axios'
 import Card from 'ant-design-vue/lib/card';
 import Button from 'ant-design-vue/lib/button';
 import 'ant-design-vue/dist/antd.css';
@@ -16,6 +15,5 @@ Vue.config.productionTip = false
 new Vue({
   store,
   router,
-  Axios,
   render: h => h(App),
 }).$mount('#app')

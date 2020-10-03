@@ -2,18 +2,23 @@
 
 exports[`Trees.vue renders correctly 1`] = `
 <div
-  justify="center"
-  type="flex"
+  class="trees-container"
 >
-  <h1>
-    Trees
-  </h1>
+  <logo-stub />
+   
+  <p>
+    "On the last day of the world I would want to plant a tree."
+  </p>
+   
+  <p>
+    ― W.S. Merwin
+  </p>
    
   <div
-    style="display: flex; justify-content: center;"
+    class="trees-container__display"
   >
     <div
-      style="width: 50%; display: flex; justify-content: space-around; flex-wrap: wrap;"
+      class="trees-container__display-inner"
     >
       <tree-card-stub
         tree="[object Object]"
