@@ -1,19 +1,17 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import Card from 'ant-design-vue/lib/card';
-import Button from 'ant-design-vue/lib/button';
-import 'ant-design-vue/dist/antd.css';
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import { Button, Card } from "ant-design-vue";
 
+const antComponents = [Button, Card];
 
-Vue.component(Button.name, Button)
-Vue.component(Card.name, Card)
+antComponents.forEach((component) => Vue.use(component));
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   store,
   router,
-  render: h => h(App),
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");

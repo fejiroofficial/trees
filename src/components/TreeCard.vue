@@ -1,6 +1,6 @@
 <template>
-  <div
-    class="tree-card ant-card ant-card-bordered"
+  <a-card
+    class="tree-card ant-card-bordered"
     :class="[showImage ? 'tree-card__tall' : 'tree-card__short']"
   >
     <div class="tree-card__name">{{ tree.name }}</div>
@@ -14,11 +14,14 @@
       />
     </div>
     <div class="tree-card__flex-box">
-      <button class="ant-btn tree-card__button" @click="showImage = !showImage">
+      <a-button
+        class="ant-btn tree-card__button"
+        @click="showImage = !showImage"
+      >
         {{ showImage ? "Hide Image" : "Show Image" }}
-      </button>
+      </a-button>
     </div>
-  </div>
+  </a-card>
 </template>
 
 <script>
@@ -37,6 +40,7 @@ export default {
 <style lang="scss" scoped>
 .tree-card {
   width: 300px;
+  margin: 20px;
   display: grid;
   justify-content: center;
   flex-grow: 1;
@@ -68,15 +72,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    &:hover,
-    &:active,
-    &:focus {
-      border-color: darkolivegreen;
-      color: darkolivegreen;
-    }
   }
-}
-.ant-card {
-  margin: 20px;
 }
 </style>
