@@ -60,8 +60,9 @@ export default {
   &__head {
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 120px;
     margin: 0 50px;
+    padding-top: 40px;
     border-bottom: 1px solid lightgray;
   }
   &__input {

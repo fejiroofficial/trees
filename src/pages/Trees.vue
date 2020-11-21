@@ -33,7 +33,6 @@ export default {
 
 <style lang="scss" scoped>
 .trees-container {
-  margin-top: 2rem;
   text-align: center;
   &__display {
     display: grid;

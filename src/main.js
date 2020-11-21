@@ -3,10 +3,10 @@ import axios from "axios";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import { Button, Card, Input, Spin } from "ant-design-vue";
+import { Button, Card, Input, Spin, Drawer, Divider } from "ant-design-vue";
 
 
-const antComponents = [Button, Card, Input, Spin];
+const antComponents = [Button, Card, Input, Spin, Drawer, Divider];
 
 antComponents.forEach((component) => Vue.use(component));
 
