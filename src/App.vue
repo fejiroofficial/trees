@@ -9,7 +9,6 @@
       placement="right"
       :closable="false"
       :visible="visible"
-      :after-visible-change="afterVisibleChange"
       @close="onClose"
     >
       <div>
@@ -33,9 +32,6 @@ export default {
     };
   },
   methods: {
-    afterVisibleChange(val) {
-      console.log("visible", val);
-    },
     showDrawer() {
       this.visible = true;
     },
@@ -69,11 +65,14 @@ export default {
     }
   }
 }
+.ant-btn {
+  height: 40px;
+}
 .ant-card-body {
   padding: 0;
 }
 .ant-drawer-body {
-  font-size: 19px;
+  font-size: 16px;
   text-align: center;
 }
 .ant-divider,

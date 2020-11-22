@@ -34,6 +34,7 @@ export default {
 <style lang="scss" scoped>
 .trees-container {
   text-align: center;
+  padding-top: 35px;
   &__display {
     display: grid;
     justify-content: center;
