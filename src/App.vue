@@ -65,18 +65,4 @@ export default {
     }
   }
 }
-.ant-btn {
-  height: 40px;
-}
-.ant-card-body {
-  padding: 0;
-}
-.ant-drawer-body {
-  font-size: 16px;
-  text-align: center;
-}
-.ant-divider,
-.ant-divider-vertical {
-  height: 4.9em;
-}
 </style>

@@ -4,6 +4,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import { Button, Card, Input, Spin, Drawer, Divider, notification} from "ant-design-vue";
+import "./styles/customAnt.scss"
 
 
 const antComponents = [Button, Card, Input, Spin, Drawer, Divider];
