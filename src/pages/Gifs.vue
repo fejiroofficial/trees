@@ -26,6 +26,7 @@
 
 <script>
 export default {
+  props: ["query"],
   data() {
     return {
       searchInput: "",
@@ -47,8 +48,8 @@ export default {
   },
   methods: {
     routeSearchHandler() {
-      if (this.$route.query.search) {
-        this.searchInput = this.$route.query.search;
+      if (this.query) {
+        this.searchInput = this.query;
         this.getGifsHandler("viaRouter");
       }
     },
@@ -75,9 +76,7 @@ export default {
     },
   },
   watch: {
-    $route() {
-      this.routeSearchHandler();
-    },
+    $route: "routeSearchHandler",
     isError(val) {
       if (val) {
         this.openNotificationWithIcon("error", val);
