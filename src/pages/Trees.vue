@@ -21,11 +21,11 @@ export default {
     TreeCard,
   },
   created() {
-    this.$store.dispatch("fetchTrees");
+    this.$store.dispatch("trees/fetchTrees");
   },
   computed: {
     trees() {
-      return this.$store.getters["getTrees"];
+      return this.$store.getters["trees/getTrees"];
     },
   },
 };
@@ -33,7 +33,8 @@ export default {
 
 <style lang="scss" scoped>
 .trees-container {
-  margin-top: 2rem;
+  text-align: center;
+  padding-top: 35px;
   &__display {
     display: grid;
     justify-content: center;

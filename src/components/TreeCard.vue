@@ -15,7 +15,7 @@
     </div>
     <div class="tree-card__flex-box">
       <a-button
-        class="ant-btn tree-card__button"
+        class="tree-card__button"
         @click="showImage = !showImage"
       >
         {{ showImage ? "Hide Image" : "Show Image" }}
