@@ -47,6 +47,9 @@ export default {
     @media (max-width: 675px) {
       width: 20rem;
     }
+    @media (min-width: 1440px) {
+      width: 75rem;
+    }
   }
 }
 </style>
